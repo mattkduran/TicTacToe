@@ -98,7 +98,7 @@ def choosePlayer():
     player1 = " "
     player2 = " "
     while player1 != "X" and player1 != "O":
-        player1 = input("Player 1, choose your symbol: X or O\n")
+        player1 = input("Player 1, choose your symbol: X or O\n").upper()
         if player1 not in ["X", "O"]:
             print("You can only choose between X and O \n")
         elif player1 == "X":
